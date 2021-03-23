@@ -116,7 +116,8 @@ $singularityImage Rscript run.sh
 
 
 
-#may want to put this into ~/misc_files (it's usually preloaded but ~/misc_files needs to be writable)
+#may want to put this into ~/misc_files (it's usually preloaded but ~/misc_files needs to be writable, with the bind 
+# command so it gets overwritten. Not very smart behaviour in singularity, but whatever)
 # maxImputations <- 1           #the max number of parallel imputations to run
 # maxImputationsInQueue <- 200           #the max number of imputations allowed waiting in a queue
 # serverRole <- 'Hub'           #the role of this computer, can be either Hub or Node
